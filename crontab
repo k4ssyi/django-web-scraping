@@ -1,0 +1,5 @@
+# /etc/crontabs/root
+# do daily/weekly/monthly maintenance
+# min	hour	day	month	weekday	command
+*/1     *   *   *   *   cd /app/; python manage.py yahoo_scraping >> /var/log/cron.log
+# */1     *   *   *   *   date  >> /var/log/cron.log
